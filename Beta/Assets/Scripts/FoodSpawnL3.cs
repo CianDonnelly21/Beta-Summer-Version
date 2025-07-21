@@ -29,7 +29,7 @@ void Start()
         BananaThree.gameObject.SetActive(false);
         Cherry.gameObject.SetActive(false);
         Hotdog.gameObject.SetActive(true);
-        Olive.gameObject.SetActive(false);
+        Olive.gameObject.SetActive(true);
         Removal.gameObject.SetActive(false);
 
         BananaOne.gameObject.transform.position = new Vector3(Random.Range(-5, 10), 6, -2);
@@ -62,7 +62,6 @@ void OnTriggerEnter(Collider other)
         {
             gameManager.UpdateGems(1);
             BananaThree.gameObject.SetActive(false);
-            Removal.gameObject.SetActive(true);
         }
 
         if(other.CompareTag("Cherry"))
@@ -100,14 +99,15 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("Olive"))
         {
             Olive.gameObject.SetActive(false);
-            Cherry.gameObject.SetActive(true);
+            Removal.gameObject.SetActive(true);
+            BoxMovable.gameObject.SetActive(false);
         }
 
         if (other.CompareTag("Removal"))
         {
-            Olive.gameObject.SetActive(true);
-            BoxMovable.gameObject.SetActive(false);
             Removal.gameObject.SetActive(false);
+            Cherry.gameObject.SetActive(true);
+
         }
     }
 }
