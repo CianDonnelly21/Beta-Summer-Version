@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManager : MonoBehaviour {
 
@@ -13,11 +12,8 @@ public Button EasyButton;
 public Button MediumButton;
 public Button HardButton;
 public Button HelpButton;
-public Button NextButton;
 public Button HomeButton;
 
-public int gems;
-public TextMeshProUGUI Gems_Left;
 
 void Start() 
     {
@@ -26,20 +22,12 @@ void Start()
         MediumButton.onClick.AddListener(LevelTwo);
         HardButton.onClick.AddListener(LevelThree);
         HelpButton.onClick.AddListener(Tutorial);
-
-        gems = 0;
     }
 
 void Update()
     {
 
     }
-
-public void UpdateGems(int NumberOfGems)
-    {
-        gems -= NumberOfGems;
-        Gems_Left.text = "Gems Left: " + gems;
-    }   
 
 void MainMenu()
 {

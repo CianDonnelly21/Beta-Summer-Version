@@ -11,11 +11,6 @@ public Button NextButton;
     {
         NextButton.onClick.AddListener(GoodLuck);
     }
-
-    void Update()
-    {
-
-    }
     
     void GoodLuck()
     {

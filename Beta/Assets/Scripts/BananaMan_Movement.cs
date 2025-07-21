@@ -5,13 +5,11 @@ public class BananMan_Movement : MonoBehaviour {
 public float speed = 0.1f;
 public GameObject CrouchMan;
 public GameObject BananaMan;
-public GameObject BackMan;
 
 void Start() 
     {
         BananaMan.gameObject.SetActive(true);
         CrouchMan.gameObject.SetActive(false);
-        BackMan.gameObject.SetActive(false);
     }
 
 void Update()
@@ -19,6 +17,9 @@ void Update()
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.forward * speed);
+
+            BananaMan.gameObject.SetActive(true);
+            CrouchMan.gameObject.SetActive(false);
         }
 
         if (Input.GetKey(KeyCode.A))
