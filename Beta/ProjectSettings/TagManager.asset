@@ -11,7 +11,9 @@ TagManager:
   - CrouchMan
   - Cherry
   - Death
-  - Collected
+  - BoxMovable
+  - Olive
+  - Removal
   layers:
   - Default
   - TransparentFX

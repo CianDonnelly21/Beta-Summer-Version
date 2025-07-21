@@ -363,6 +363,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!65 &64918678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -520,7 +521,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0.5, z: 0}
   m_Center: {x: 0, y: 0.24609041, z: 0}
 --- !u!114 &124481673
 MonoBehaviour:
@@ -556,6 +557,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1001 &126048499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1267,6 +1269,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1001 &660553022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1377,7 +1380,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0.5, z: 0}
   m_Center: {x: 0, y: 0.24609041, z: 0}
 --- !u!114 &896693899
 MonoBehaviour:
@@ -1413,6 +1416,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1001 &976489439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1567,6 +1571,149 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 491414075}
   m_SourcePrefab: {fileID: 100100000, guid: 973e30aed52df874a8a9b583c4cf06d6, type: 3}
+--- !u!1 &1065592351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+  m_PrefabInstance: {fileID: 1178881007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1065592352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065592351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61968a486b0dd984db1a748bf4889718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BananaOne: {fileID: 1431352344}
+  BananaTwo: {fileID: 124481663}
+  BananaThree: {fileID: 896693889}
+  Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 64918675}
+  BananaMan: {fileID: 568877299}
+  CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
+--- !u!65 &1065592353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065592351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0, y: 0, z: 0}
+  m_Center: {x: 1.110223e-16, y: 0.12715182, z: 0}
+--- !u!114 &1065592354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065592351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa02791fd453ce4db1d46f183b4dfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HomeButton: {fileID: 1996237642}
+  gems: 0
+  Gems: {fileID: 1486371284}
+--- !u!1001 &1178881007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_Name
+      value: Cherry
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_TagString
+      value: Removal
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8913345
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.45334634
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 53.917
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065592354}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065592353}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065592352}
+  m_SourcePrefab: {fileID: 100100000, guid: da4eeef492c0d1842963d6576330682d, type: 3}
 --- !u!1 &1340147213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,6 +2123,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1 &1396063375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +2257,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0, y: 0.100000024, z: 5}
+  m_Size: {x: 0, y: 0.5, z: 5}
   m_Center: {x: 0, y: 0.24609041, z: 0.7590998}
 --- !u!114 &1431352358
 MonoBehaviour:
@@ -2145,6 +2293,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1 &1452951964
 GameObject:
   m_ObjectHideFlags: 0
@@ -8227,6 +8376,7 @@ MonoBehaviour:
   Hotdog: {fileID: 64918675}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
+  Removal: {fileID: 1065592351}
 --- !u!1001 &1971917030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8553,3 +8703,4 @@ SceneRoots:
   - {fileID: 1767929691}
   - {fileID: 1378261877}
   - {fileID: 64918674}
+  - {fileID: 1178881007}
