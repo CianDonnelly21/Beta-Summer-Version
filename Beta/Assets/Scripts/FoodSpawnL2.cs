@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class FoodSpawnL2 : MonoBehaviour {
+public class Food_SpawnL2 : MonoBehaviour {
 
 private GameManager gameManager;
 public GameObject BananaOne;
@@ -27,7 +27,7 @@ void Start()
         Cherry.gameObject.SetActive(false);
         Hotdog.gameObject.SetActive(true);
 
-        BananaOne.gameObject.transform.position = new Vector3(Random.Range(-10, 15), 5, -1);
+        BananaOne.gameObject.transform.position = new Vector3(Random.Range(-5, 10), 5, -2);
     }
 
 void Update()
@@ -39,17 +39,15 @@ void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("BananaOne"))
         {
-
             BananaOne.gameObject.SetActive(false);
-            BananaTwo.gameObject.transform.position = new Vector3(Random.Range(-10, 15), 5, -1);
+            BananaTwo.gameObject.transform.position = new Vector3(Random.Range(-7, 10), 5, -2);
             BananaTwo.gameObject.SetActive(true);
         }
 
         if(other.CompareTag("BananaTwo"))
         {
-
             BananaTwo.gameObject.SetActive(false);
-            BananaThree.gameObject.transform.position = new Vector3(Random.Range(-10, 15), 5, -1);
+            BananaThree.gameObject.transform.position = new Vector3(Random.Range(-10, 10), 5, -2);
             BananaThree.gameObject.SetActive(true);
         } 
 
@@ -85,7 +83,6 @@ void OnTriggerEnter(Collider other)
             BananaThree.gameObject.SetActive(false);
             Cherry.gameObject.SetActive(false);
             Hotdog.gameObject.SetActive(false);
-
 
             SceneManager.LoadScene(5);
         }
