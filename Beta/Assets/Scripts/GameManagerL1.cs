@@ -13,10 +13,14 @@ public Button HomeButton;
 public int gems;
 public TextMeshProUGUI Gems;
 
+public int Life;
+public TextMeshProUGUI Lives;
+
 void Start() 
     {
         HomeButton.onClick.AddListener(MainMenu);
         gems = 3;
+        Life = 1;
     }
 
 void Update()
@@ -28,6 +32,12 @@ public void UpdateGems(int NumberOfGems)
     {
         gems -= NumberOfGems;
         Gems.text = "Bananas: " + gems;
+    }
+
+public void UpdateLives(int NumberOfLives)
+    {
+        Life -= NumberOfLives;
+        Lives.text = "Lives: " + Life;
     }
     
 void MainMenu()

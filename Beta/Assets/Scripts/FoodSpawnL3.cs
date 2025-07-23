@@ -84,6 +84,7 @@ void OnTriggerEnter(Collider other)
 
         if(other.CompareTag("Death"))
         {
+            gameManager.UpdateLives(1);
             BananaMan.gameObject.SetActive(false);
             CrouchMan.gameObject.SetActive(false);
             BananaOne.gameObject.SetActive(false);
