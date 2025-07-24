@@ -13,12 +13,15 @@ public GameObject BananaThree;
 public GameObject BananaMan;
 public GameObject CrouchMan;
 public GameObject Cherry;
+public AudioSource GemCollectorAudio;
+public AudioClip CollectSound;
 
 void Start()
     {        
         gameManager = GameObject.Find("BananaOne").GetComponent<GameManagerL1>();
         gameManager = GameObject.Find("BananaTwo").GetComponent<GameManagerL1>();
         gameManager = GameObject.Find("BananaThree").GetComponent<GameManagerL1>();
+        GemCollectorAudio = GetComponent<AudioSource>();
 
         BananaOne.gameObject.SetActive(true);
         BananaTwo.gameObject.SetActive(false);
@@ -36,6 +39,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("BananaOne"))
         {
             gameManager.UpdateGems(1);
+                    GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             BananaOne.gameObject.SetActive(false);
             BananaTwo.gameObject.SetActive(true);
         }
@@ -43,6 +47,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("BananaTwo"))
         {
             gameManager.UpdateGems(1);
+                    GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             BananaTwo.gameObject.SetActive(false);
             BananaThree.gameObject.SetActive(true);
         } 
@@ -50,6 +55,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("BananaThree"))
         {
             gameManager.UpdateGems(1);
+            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             BananaThree.gameObject.SetActive(false);
             Cherry.gameObject.SetActive(true);
         }
@@ -57,6 +63,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("Cherry"))
         {
             Cherry.gameObject.SetActive(false);
+            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             
             //How it loads next scene - Check
             int NextIndex = SceneManager.GetActiveScene().buildIndex + 1;

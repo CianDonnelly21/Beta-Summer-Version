@@ -5,6 +5,7 @@ public class BananMan_Movement : MonoBehaviour {
 public float speed = 0.1f;
 public GameObject CrouchMan;
 public GameObject BananaMan;
+public bool isOnGround = true;
 
 void Start() 
     {
@@ -27,14 +28,16 @@ void Update()
             transform.Translate(Vector3.back * speed);
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
-            transform.Translate(Vector3.up * 1);
+            transform.Translate(Vector3.up * 2);
+            isOnGround = false;
         }
         //Double Jump
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.R) && isOnGround)
         {
-            transform.Translate(Vector3.up * 7);
+            transform.Translate(Vector3.up * 5);
+            isOnGround = false;
         }
 
         //Crouch 
@@ -52,5 +55,10 @@ void Update()
             CrouchMan.gameObject.SetActive(false);
             BananaMan.gameObject.SetActive(true);
         }
+    }
+
+        void OnCollisionEnter(Collision collision)
+    {
+        isOnGround = true;
     }
 }
