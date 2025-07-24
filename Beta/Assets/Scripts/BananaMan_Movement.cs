@@ -15,7 +15,7 @@ void Start()
 
 void Update()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.forward * speed);
 
@@ -23,25 +23,25 @@ void Update()
             CrouchMan.gameObject.SetActive(false);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.back * speed);
         }
 
-        if (Input.GetKey(KeyCode.Space) && isOnGround)
+        if (Input.GetKey(KeyCode.UpArrow) && isOnGround)
         {
             transform.Translate(Vector3.up * 2);
             isOnGround = false;
         }
         //Double Jump
-        if (Input.GetKey(KeyCode.R) && isOnGround)
+        if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
             transform.Translate(Vector3.up * 5);
             isOnGround = false;
         }
 
         //Crouch 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             BananaMan.transform.position = transform.position;
 
