@@ -13,13 +13,13 @@ EditorBuildSettings:
     guid: 13c9aabf09410864f96d5a2380451224
   - enabled: 1
     path: Assets/Scenes/Level 1.unity
-    guid: 8684125622ab9f0418f23e82b703a034
+    guid: af28757cd8dada040be20ac368ac05ea
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
-    guid: 4f35d5c4ee7acf34297fd396082c87f2
+    guid: 7f808078ad72833409b22f97c613fbdf
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
-    guid: a18fee21f4e8765429c4e4972ec95c7f
+    guid: 6d9c15a504781ae4fa20deb6ee061941
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: fb5f3a2ffd9821b4e87d01b9513b3c32
@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GoodLuck.unity
     guid: db1c0cf3a8545d143b0f150723afad53
+  - enabled: 0
+    path: Assets/Scenes/Tutorial Level.unity
+    guid: 8684125622ab9f0418f23e82b703a034
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

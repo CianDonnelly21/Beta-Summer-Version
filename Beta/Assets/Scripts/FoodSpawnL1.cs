@@ -15,6 +15,7 @@ public GameObject CrouchMan;
 public GameObject Cherry;
 public AudioSource GemCollectorAudio;
 public AudioClip CollectSound;
+public AudioClip PortalGemSound;
 
 void Start()
     {        
@@ -39,7 +40,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("BananaOne"))
         {
             gameManager.UpdateGems(1);
-                    GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
+            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             BananaOne.gameObject.SetActive(false);
             BananaTwo.gameObject.SetActive(true);
         }
@@ -47,7 +48,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("BananaTwo"))
         {
             gameManager.UpdateGems(1);
-                    GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
+            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
             BananaTwo.gameObject.SetActive(false);
             BananaThree.gameObject.SetActive(true);
         } 
@@ -63,7 +64,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("Cherry"))
         {
             Cherry.gameObject.SetActive(false);
-            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
+            GemCollectorAudio.PlayOneShot(PortalGemSound, 1.0f);
             
             //How it loads next scene - Check
             int NextIndex = SceneManager.GetActiveScene().buildIndex + 1;

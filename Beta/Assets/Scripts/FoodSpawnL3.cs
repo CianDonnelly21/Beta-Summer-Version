@@ -19,6 +19,7 @@ public GameObject BoxMovable;
 public GameObject Removal;
 public AudioSource GemCollectorAudio;
 public AudioClip CollectSound;
+public AudioClip PortalGemSound;
 
 void Start()
     {
@@ -74,7 +75,7 @@ void OnTriggerEnter(Collider other)
         if(other.CompareTag("Cherry"))
         {
             Cherry.gameObject.SetActive(false);
-            GemCollectorAudio.PlayOneShot(CollectSound, 1.0f);
+            GemCollectorAudio.PlayOneShot(PortalGemSound, 1.0f);
 
             //How it loads next scene - Check
             int NextIndex = SceneManager.GetActiveScene().buildIndex + 1;
@@ -101,6 +102,7 @@ void OnTriggerEnter(Collider other)
             Cherry.gameObject.SetActive(false);
             Hotdog.gameObject.SetActive(false);
             Olive.gameObject.SetActive(false);
+            Removal.gameObject.SetActive(false);
 
             SceneManager.LoadScene(5);
         }
