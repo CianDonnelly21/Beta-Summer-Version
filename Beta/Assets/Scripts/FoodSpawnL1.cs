@@ -13,6 +13,7 @@ public GameObject BananaThree;
 public GameObject BananaMan;
 public GameObject CrouchMan;
 public GameObject Cherry;
+public GameObject Hotdog;
 public AudioSource GemCollectorAudio;
 public AudioClip CollectSound;
 public AudioClip PortalGemSound;
@@ -28,6 +29,7 @@ void Start()
         BananaTwo.gameObject.SetActive(false);
         BananaThree.gameObject.SetActive(false);
         Cherry.gameObject.SetActive(false);
+        Hotdog.gameObject.SetActive(true);
     }
 
 void Update()
@@ -76,6 +78,20 @@ void OnTriggerEnter(Collider other)
             BananaTwo.gameObject.SetActive(false);
             BananaThree.gameObject.SetActive(false);
             Cherry.gameObject.SetActive(false);
+        }
+
+         if(other.CompareTag("Death"))
+        {
+            gameManager.UpdateLives(1);
+            BananaMan.gameObject.SetActive(false);
+            CrouchMan.gameObject.SetActive(false);
+            BananaOne.gameObject.SetActive(false);
+            BananaTwo.gameObject.SetActive(false);
+            BananaThree.gameObject.SetActive(false);
+            Cherry.gameObject.SetActive(false);
+            Hotdog.gameObject.SetActive(false);
+
+            SceneManager.LoadScene(5);
         }
     }
 }

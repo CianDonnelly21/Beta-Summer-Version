@@ -310,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39
+      value: -1.35
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -354,13 +354,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 105954887}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 105954886}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 105954885}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 105954891}
   m_SourcePrefab: {fileID: 100100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
 --- !u!1 &105954884 stripped
 GameObject:
@@ -386,7 +386,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0, y: 0, z: 5}
+  m_Size: {x: 0, y: 0, z: 0}
   m_Center: {x: 0, y: 0.073231064, z: -0.000000007450581}
 --- !u!114 &105954886
 MonoBehaviour:
@@ -405,7 +405,7 @@ MonoBehaviour:
   Gems: {fileID: 0}
   Life: 0
   Lives: {fileID: 0}
---- !u!114 &105954887
+--- !u!114 &105954891
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,20 +414,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 105954884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61968a486b0dd984db1a748bf4889718, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d03296f7faf3f40960c7b86958a8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   BananaOne: {fileID: 1431352344}
   BananaTwo: {fileID: 124481663}
   BananaThree: {fileID: 896693889}
-  Cherry: {fileID: 0}
-  Hotdog: {fileID: 105954884}
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
-  Removal: {fileID: 0}
-  GemCollectorAudio: {fileID: 0}
-  CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
-  PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
+  Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
+  GemCollectorAudio: {fileID: 1734221904}
+  CollectSound: {fileID: 0}
+  PortalGemSound: {fileID: 0}
 --- !u!1 &124481663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 461f0170c82b53340a9812199b63bbd4, type: 3}
@@ -494,6 +493,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -604,6 +604,71 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 18, y: 100, z: 100}
   m_Center: {x: 0.031172872, y: 1.0507301, z: 0}
+--- !u!1 &179363694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+  m_PrefabInstance: {fileID: 1968104192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &179363695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179363694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d03296f7faf3f40960c7b86958a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BananaOne: {fileID: 1431352344}
+  BananaTwo: {fileID: 124481663}
+  BananaThree: {fileID: 896693889}
+  BananaMan: {fileID: 568877299}
+  CrouchMan: {fileID: 1767929692}
+  Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 179363694}
+  GemCollectorAudio: {fileID: 1734221904}
+  CollectSound: {fileID: 0}
+  PortalGemSound: {fileID: 0}
+--- !u!65 &179363696
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179363694}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.073231064, z: -0.000000007450581}
+--- !u!114 &179363697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179363694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa02791fd453ce4db1d46f183b4dfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HomeButton: {fileID: 0}
+  gems: 0
+  Gems: {fileID: 0}
+  Life: 0
+  Lives: {fileID: 0}
 --- !u!1 &238863912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 635547659545568360, guid: 81bb9eea30387e442899949a80011e55, type: 3}
@@ -1313,6 +1378,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -6166,6 +6232,88 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!1001 &753963431
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_Name
+      value: Hotdog (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6828655
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.81728643
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18198355
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4052351
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.36702788
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 52.747
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -48.368
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943779841}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943779840}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943779839}
+  m_SourcePrefab: {fileID: 100100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
 --- !u!1 &820477163
 GameObject:
   m_ObjectHideFlags: 0
@@ -11065,6 +11213,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -11326,7 +11475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -11442,7 +11591,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 68
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -11629,6 +11778,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -11824,6 +11974,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -12103,7 +12254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.02, y: 134.1}
+  m_AnchoredPosition: {x: -290.7, y: 180.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486371284
@@ -12218,7 +12369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HomeButton: {fileID: 1996237642}
-  gems: 3
+  gems: 0
   Gems: {fileID: 1486371284}
   Life: 1
   Lives: {fileID: 1598905210}
@@ -17239,7 +17390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -309.02, y: 83.1}
+  m_AnchoredPosition: {x: -290.7, y: 140.8}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598905210
@@ -18191,6 +18342,7 @@ MonoBehaviour:
   BananaMan: {fileID: 568877299}
   CrouchMan: {fileID: 1767929692}
   Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 105954884}
   GemCollectorAudio: {fileID: 1734221904}
   CollectSound: {fileID: 8300000, guid: f17bac10ee4c44148a1e9088e7540c55, type: 3}
   PortalGemSound: {fileID: 8300000, guid: 1916972b0254443a2ac996968e38335c, type: 3}
@@ -18211,6 +18363,153 @@ MonoBehaviour:
   Gems: {fileID: 1486371284}
   Life: 0
   Lives: {fileID: 1598905210}
+--- !u!1 &1943779838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+  m_PrefabInstance: {fileID: 753963431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1943779839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943779838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d03296f7faf3f40960c7b86958a8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BananaOne: {fileID: 1431352344}
+  BananaTwo: {fileID: 124481663}
+  BananaThree: {fileID: 896693889}
+  BananaMan: {fileID: 568877299}
+  CrouchMan: {fileID: 1767929692}
+  Cherry: {fileID: 1378261875}
+  Hotdog: {fileID: 1943779838}
+  GemCollectorAudio: {fileID: 1734221904}
+  CollectSound: {fileID: 0}
+  PortalGemSound: {fileID: 0}
+--- !u!65 &1943779840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943779838}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.073231064, z: -0.000000007450581}
+--- !u!114 &1943779841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943779838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa02791fd453ce4db1d46f183b4dfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HomeButton: {fileID: 0}
+  gems: 0
+  Gems: {fileID: 0}
+  Life: 0
+  Lives: {fileID: 0}
+--- !u!1001 &1968104192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_Name
+      value: Hotdog (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_TagString
+      value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.6828655
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.81728643
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18198355
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.4052351
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.36702788
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 52.747
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -48.368
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 179363697}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 179363696}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 179363695}
+  m_SourcePrefab: {fileID: 100100000, guid: fdc7d8dffa381b54cb7740b8761d54c0, type: 3}
 --- !u!1001 &1971917030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18312,7 +18611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 329.90033, y: 136.16003}
+  m_AnchoredPosition: {x: 313.3, y: 179.3}
   m_SizeDelta: {x: 170, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1996237642
@@ -18448,3 +18747,5 @@ SceneRoots:
   - {fileID: 1734221905}
   - {fileID: 1045321892}
   - {fileID: 105954883}
+  - {fileID: 753963431}
+  - {fileID: 1968104192}
