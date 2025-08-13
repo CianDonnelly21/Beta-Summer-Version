@@ -18,7 +18,8 @@ Boxes: https://assetstore.unity.com/packages/3d/props/furniture/cartoon-wooden-b
 
 Box Colour:https://www.owatroldirect.co.uk/woodcare/difference-between-brown-green-timber/
 
-Main Menu Image: https://hotpot.ai/ai-image-generator/create
+Main Menu Image: https://hotpot.ai/ai-image-generator/create 
+Prompt: "I'm making an adventure game called The Adventures Of Banana-Man, can you create a main menu background where the character Banana-Man is running as if he is on an adventure. Can you also make him look cartoonish."
 
 ChalkBoard (Tutorial Background): https://www.etsy.com/ie/listing/187684779/chalk-board-background-texture-school
 
